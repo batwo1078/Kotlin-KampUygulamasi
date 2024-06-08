@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Anasayfa"/>
+
+    <item
+        android:id="@+id/nav_havadurumu"
+        android:icon="@drawable/ic_baseline_cloud_queue_24"
+        android:title="Hava Durumu" />
+
+    <item
+        android:id="@+id/nav_harita"
+        android:icon="@drawable/baseline_map_24"
+        android:title="Harita"/>
+
+    <item
+        android:id="@+id/nav_pusula"
+        android:icon="@drawable/baseline_pusula"
+        android:title="Pusula"/>
+
+    <!--<item
+        android:id="@+id/nav_liste"
+        android:icon="@drawable/baseline_format_list_bulleted_24"
+        android:title="Malzeme Listesi"/>-->
+    <item
+        android:id="@+id/nav_tarif"
+        android:icon="@drawable/baseline_food_bank_24"
+        android:title="Yemek Tarifleri"/>
+
+
+
+
+</menu>

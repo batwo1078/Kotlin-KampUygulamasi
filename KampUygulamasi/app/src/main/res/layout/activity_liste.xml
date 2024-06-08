@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anasayfabg"
+    tools:context=".view.liste_activity">
+
+    <!-- İçerik Alanı -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- İçerik Alanı -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/geribtn4"
+                    android:layout_width="61dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_left_23" />
+
+                <EditText
+                    android:id="@+id/txturun4"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txturun2" />
+
+                <EditText
+                    android:id="@+id/txturun"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="32dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <EditText
+                    android:id="@+id/txturun2"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txturun" />
+
+                <ImageView
+                    android:id="@+id/btnarttır2"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="136dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <TextView
+                    android:id="@+id/tvmiktar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <ImageView
+                    android:id="@+id/btnarttır"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <TextView
+                    android:id="@+id/tvmiktar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvmiktar" />
+
+                <TextView
+                    android:id="@+id/tvmiktar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvmiktar2" />
+
+                <ImageView
+                    android:id="@+id/btnarttır4"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <TextView
+                    android:id="@+id/tvmiktar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvmiktar3" />
+
+                <ImageView
+                    android:id="@+id/btnarttır5"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="295dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <TextView
+                    android:id="@+id/tvmiktar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="53dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvmiktar4" />
+
+                <ImageView
+                    android:id="@+id/btnarttır6"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="368dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <TextView
+                    android:id="@+id/tvmiktar6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvmiktar5" />
+
+                <ImageView
+                    android:id="@+id/btnarttır7"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="432dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnarttır8"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="504dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <TextView
+                    android:id="@+id/tvmiktar7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvmiktar6" />
+
+                <ImageView
+                    android:id="@+id/btnazalt9"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="600dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnazalt10"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="668dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnazalt"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnazalt2"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="168dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnazalt4"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="248dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnazalt5"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="325dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnazalt6"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="392dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnazalt7"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="460dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnazalt8"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="532dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnarttır9"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="572dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnarttır10"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="648dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <TextView
+                    android:id="@+id/tvmiktar8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvmiktar7" />
+
+                <TextView
+                    android:id="@+id/tvmiktar9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvmiktar8" />
+
+                <EditText
+                    android:id="@+id/txturun5"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="28dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txturun4" />
+
+                <EditText
+                    android:id="@+id/txturun6"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txturun5" />
+
+                <EditText
+                    android:id="@+id/txturun7"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txturun6" />
+
+                <EditText
+                    android:id="@+id/txturun8"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txturun7" />
+
+                <EditText
+                    android:id="@+id/txturun9"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txturun8" />
+
+                <EditText
+                    android:id="@+id/txturun10"
+                    android:layout_width="233dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Malzeme İsmi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txturun9" />
+
+                <ImageView
+                    android:id="@+id/btnazalt11"
+                    android:layout_width="46dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="750dp"
+                    android:layout_marginEnd="44dp"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <ImageView
+                    android:id="@+id/btnarttır11"
+                    android:layout_width="47dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="732dp"
+                    android:layout_marginEnd="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Malzeme Listesi"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+    </ScrollView>
+    <!-- NavigationView -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#9A8674"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="#473627"
+        app:itemTextColor="#473627"
+        app:menu="@menu/nav_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

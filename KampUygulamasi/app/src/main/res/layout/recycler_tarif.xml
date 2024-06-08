@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#22FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recyclerviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="Test"
+        android:textColor="#473627"
+        android:textSize="24dp"
+        android:textStyle="bold"></TextView>
+
+
+</LinearLayout>
